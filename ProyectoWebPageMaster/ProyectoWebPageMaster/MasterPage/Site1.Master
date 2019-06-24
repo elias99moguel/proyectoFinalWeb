@@ -1,0 +1,288 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProyectoWebPageMaster.MasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+
+	 <link href="../recursos/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="../recursos/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="../recursos/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+
+
+	  <!-- Botones-->
+
+	<link href="../recursos/css/misestilos.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href="../recursos/css/ihover.css" rel="stylesheet" />
+     <link rel="icon" href="../recursos/img/fav-icon.png" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Sierra</title>
+    <link href="../recursos/css/estilocards.css" rel="stylesheet" />
+        <!-- Icon css link -->
+        <link href="../recursos/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="../recursos/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../recursos/css/estiloiniciarsesion.css" rel="stylesheet" />
+        <!-- Rev slider css -->
+        <link href="../recursos/vendors/revolution/css/settings.css" rel="stylesheet">
+        <link href="../recursos/vendors/revolution/css/layers.css" rel="stylesheet">
+        <link href="../recursos/vendors/revolution/css/navigation.css" rel="stylesheet">
+
+
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<script src="../recursos/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../recursos/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="../recursos/js/custom.js"></script>
+        
+
+
+
+
+        <!-- Extra plugin css -->
+        <link href="../recursos/vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+        
+        <link href="../recursos/css/style.css" rel="stylesheet">
+        <link href="../recursos/css/responsive.css" rel="stylesheet">
+
+
+
+
+	
+
+
+
+  
+	<script src="../recursos/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../recursos/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="../recursos/js/custom.js"></script>
+	 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <!--================Header Menu Area =================-->
+        <header class="main_menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="../recursos/img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="../GUI/home.aspx">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">Buscar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Terminos y condiciones</a></li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navegar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="nav-item"><a class="nav-link" href="../GUI/Romance.aspx">Romance</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/historias.aspx">Acción</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/Aventura.aspx">Aventura</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/Chick-Lit.aspx">Chick-Lit</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Ciencia_Ficcion.aspx">Ciencia Ficción</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Espiritual.aspx">Espiritual</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Fantasia.aspx">Fantasia</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Humor.aspx">Humor</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Novela_Historica.aspx">Novela Historica</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Novela_Juvenil.aspx">Novela Juvenil</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Poesia.aspx">Poesia</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Fanfic.aspx">Historias Cortas</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Misterio.aspx">Misterio</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="../GUI/Paranormal.aspx">Paranormal</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../GUI/FanFic_estesi.aspx">FanFic</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../GUI/perfil.aspx">Perfil</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--================End Header Menu Area =================-->
+         
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+               <!--================Footer Area =================-->
+        <footer class="footr_area">
+            
+            <div class="footer_copyright">
+                <div class="container">
+                    <div class="float-sm-left">
+                        <h5><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></h5>
+                    </div>
+                    <div class="float-sm-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+
+       
+        <div class="modal" tabindex="-1" role="dialog" id="modalLoginForm">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Un verano inolvidable</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+           <div class="card mb-3 " style="max-width: 420px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../recursos/img/portada_libros/Hatsune.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>                     
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Leer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="../recursos/js/jquery-3.2.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../recursos/js/popper.min.js"></script>
+        <script src="../recursos/js/bootstrap.min.js"></script>
+        <!-- Rev slider js -->
+        <script src="../recursos/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="../recursos/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <!-- Extra plugin css -->
+        <script src="../recursos/vendors/counterup/jquery.waypoints.min.js"></script>
+        <script src="../recursos/vendors/counterup/jquery.counterup.min.js"></script> 
+        <script src="../recursos/vendors/counterup/apear.js"></script>
+        <script src="../recursos/vendors/counterup/countto.js"></script>
+        <script src="../recursos/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../recursos/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../recursos/js/smoothscroll.js"></script>
+        
+        <script src="../recursos/js/theme.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="../recursos/js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    </form>
+</body>
+</html>

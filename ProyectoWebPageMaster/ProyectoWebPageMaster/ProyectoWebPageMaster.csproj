@@ -1,0 +1,635 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45051EC8-A0FA-4298-9DC2-3E93D14B219C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoWebPageMaster</RootNamespace>
+    <AssemblyName>ProyectoWebPageMaster</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\abcclasificacion.aspx" />
+    <Content Include="GUI\abcestatus.aspx" />
+    <Content Include="GUI\abcGenero.aspx" />
+    <Content Include="GUI\abccesatado y pais.aspx" />
+    <Content Include="GUI\abctipousuario.aspx" />
+    <Content Include="GUI\Administrador.aspx" />
+    <Content Include="GUI\Aventura.aspx" />
+    <Content Include="GUI\Chick-Lit.aspx" />
+    <Content Include="GUI\Ciencia_Ficcion.aspx" />
+    <Content Include="GUI\Espiritual.aspx" />
+    <Content Include="GUI\Fanfic.aspx" />
+    <Content Include="GUI\FanFic_estesi.aspx" />
+    <Content Include="GUI\Fantasia.aspx" />
+    <Content Include="GUI\historias.aspx" />
+    <Content Include="GUI\home.aspx" />
+    <Content Include="GUI\Humor.aspx" />
+    <Content Include="GUI\index.aspx" />
+    <Content Include="GUI\Misterio.aspx" />
+    <Content Include="GUI\Novela_Historica.aspx" />
+    <Content Include="GUI\Novela_Juvenil.aspx" />
+    <Content Include="GUI\pais.aspx" />
+    <Content Include="GUI\Paranormal.aspx" />
+    <Content Include="GUI\perfil.aspx" />
+    <Content Include="GUI\Poesia.aspx" />
+    <Content Include="GUI\Romance.aspx" />
+    <Content Include="recursos\css\bootstrap.min.css" />
+    <Content Include="recursos\css\estilocards.css" />
+    <Content Include="recursos\css\estiloiniciarsesion.css" />
+    <Content Include="recursos\css\font-awesome.min.css" />
+    <Content Include="recursos\css\ihover.css" />
+    <Content Include="recursos\css\misestilos.css" />
+    <Content Include="recursos\css\owl.carousel.css" />
+    <Content Include="recursos\css\owl.carousel.min.css" />
+    <Content Include="recursos\css\owl.theme.default.css" />
+    <Content Include="recursos\css\owl.theme.default.min.css" />
+    <Content Include="recursos\css\responsive.css" />
+    <Content Include="recursos\css\style.css" />
+    <Content Include="recursos\css\custom.css" />
+    <Content Include="recursos\css\font-awesome.css" />
+    <Content Include="recursos\fonts\fontawesome-webfont.svg" />
+    <Content Include="recursos\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="recursos\img\3d-shap.png" />
+    <Content Include="recursos\img\3d-slider-shap.png" />
+    <Content Include="recursos\img\add.jpg" />
+    <Content Include="recursos\img\banner\banner-bg.png" />
+    <Content Include="recursos\img\blog\blog-1.jpg" />
+    <Content Include="recursos\img\blog\blog-2.jpg" />
+    <Content Include="recursos\img\blog\blog-3.jpg" />
+    <Content Include="recursos\img\blog\blog-author.png" />
+    <Content Include="recursos\img\Chik-Lit\51FTCJ7ssXL.jpg" />
+    <Content Include="recursos\img\Chik-Lit\91oqdxcmIvL.jpg" />
+    <Content Include="recursos\img\Chik-Lit\9788401353437.jpg" />
+    <Content Include="recursos\img\Ciencia_Ficcion_Libro\descarga %281%29.jpg" />
+    <Content Include="recursos\img\Ciencia_Ficcion_Libro\descarga %282%29.jpg" />
+    <Content Include="recursos\img\Ciencia_Ficcion_Libro\descarga.jpg" />
+    <Content Include="recursos\img\comment\comment-1.png" />
+    <Content Include="recursos\img\comment\comment-2.png" />
+    <Content Include="recursos\img\Espiritual_liro\alucinaciones-reales-terence-mckenna.jpg" />
+    <Content Include="recursos\img\Espiritual_liro\aprendiza-bruja-wallace.jpg" />
+    <Content Include="recursos\img\Espiritual_liro\camino-corazon-jack-kornfield.jpg" />
+    <Content Include="recursos\img\Fanfic_Libro\1535213745_37.jpg" />
+    <Content Include="recursos\img\Fanfic_Libro\1550768952_82.jpg" />
+    <Content Include="recursos\img\Fanfic_Libro\1552779571_13.jpg" />
+    <Content Include="recursos\img\fav-icon.png" />
+    <Content Include="recursos\img\footer-bg.jpg" />
+    <Content Include="recursos\img\footer-logo.png" />
+    <Content Include="recursos\img\fotos_perfil\perfil.jpg" />
+    <Content Include="recursos\img\Historia_Corta_Libro\9788420651361.jpg" />
+    <Content Include="recursos\img\Historia_Corta_Libro\9788420697116.jpg" />
+    <Content Include="recursos\img\Historia_Corta_Libro\El baile.jpg" />
+    <Content Include="recursos\img\home-slider\slider-bg-1.png" />
+    <Content Include="recursos\img\home-slider\slider-m-1.png" />
+    <Content Include="recursos\img\Humor\me-vestire-de-medianoche-9788415831037-196x300.jpg" />
+    <Content Include="recursos\img\Humor\proyecto_esposa_el_300_rgb-187x300.jpg" />
+    <Content Include="recursos\img\Humor\índice.jpeg" />
+    <Content Include="recursos\img\icon\f-icon-1.png" />
+    <Content Include="recursos\img\icon\f-icon-2.png" />
+    <Content Include="recursos\img\icon\f-icon-3.png" />
+    <Content Include="recursos\img\icon\f-icon-4.png" />
+    <Content Include="recursos\img\icon\f-icon-5.png" />
+    <Content Include="recursos\img\icon\f-icon-6.png" />
+    <Content Include="recursos\img\icon\quote-icon.png" />
+    <Content Include="recursos\img\icon\title-icon.png" />
+    <Content Include="recursos\img\icon\video-icon.png" />
+    <Content Include="recursos\img\instagram\ins-1.jpg" />
+    <Content Include="recursos\img\instagram\ins-2.jpg" />
+    <Content Include="recursos\img\instagram\ins-3.jpg" />
+    <Content Include="recursos\img\instagram\ins-4.jpg" />
+    <Content Include="recursos\img\instagram\ins-5.jpg" />
+    <Content Include="recursos\img\instagram\ins-6.jpg" />
+    <Content Include="recursos\img\instagram\ins-7.jpg" />
+    <Content Include="recursos\img\instagram\ins-8.jpg" />
+    <Content Include="recursos\img\instagram\right-instagram\r-in-1.jpg" />
+    <Content Include="recursos\img\instagram\right-instagram\r-in-2.jpg" />
+    <Content Include="recursos\img\instagram\right-instagram\r-in-3.jpg" />
+    <Content Include="recursos\img\instagram\right-instagram\r-in-4.jpg" />
+    <Content Include="recursos\img\instagram\right-instagram\r-in-5.jpg" />
+    <Content Include="recursos\img\instagram\right-instagram\r-in-6.jpg" />
+    <Content Include="recursos\img\iphone4.png" />
+    <Content Include="recursos\img\leyendo.png" />
+    <Content Include="recursos\img\Libro_Aventura\dificil-de-doblegar.jpg" />
+    <Content Include="recursos\img\Libro_Aventura\los-nietos-de-dios.jpg" />
+    <Content Include="recursos\img\Libro_Aventura\mareas-del-tiempo.jpg" />
+    <Content Include="recursos\img\Libro_Romance\EMMA.jpg" />
+    <Content Include="recursos\img\Libro_Romance\OYP.jpg" />
+    <Content Include="recursos\img\Libro_Romance\persuasion.jpg" />
+    <Content Include="recursos\img\Libro_Romance\SYS.jpg" />
+    <Content Include="recursos\img\Lirbo_Fantasia\El don de los anillos.jpg" />
+    <Content Include="recursos\img\Lirbo_Fantasia\FYH.jpg" />
+    <Content Include="recursos\img\Lirbo_Fantasia\la-historia-interminable.jpg" />
+    <Content Include="recursos\img\logo.png" />
+    <Content Include="recursos\img\Misterio_Libro\Diez-Negritos.jpg" />
+    <Content Include="recursos\img\Misterio_Libro\El-código-Da-Vinci.jpg" />
+    <Content Include="recursos\img\Misterio_Libro\El-nombre-de-la-rosa.jpg" />
+    <Content Include="recursos\img\Novelas_Historicas\aguilas-y-cuervos-paulina-gedge.png" />
+    <Content Include="recursos\img\Novelas_Historicas\el-asirio-nicholas-guild.png" />
+    <Content Include="recursos\img\Novelas_Historicas\la-guerra-del-fin-del-mundo-mario-vargas-llosa.png" />
+    <Content Include="recursos\img\Novela_Juvenil\71+6yF167NL.jpg" />
+    <Content Include="recursos\img\Novela_Juvenil\81SSk++Hv3L.jpg" />
+    <Content Include="recursos\img\Novela_Juvenil\9788420415703.jpg" />
+    <Content Include="recursos\img\Novela_Juvenil\9788496756397.jpg" />
+    <Content Include="recursos\img\Novela_Juvenil\hushhush.png" />
+    <Content Include="recursos\img\Paranormal\la-casa-infernal_opt.jpg" />
+    <Content Include="recursos\img\Paranormal\la-maldicion-de-hill-house_opt.jpg" />
+    <Content Include="recursos\img\Paranormal\zona-muerta-stephen-king-terror.jpg" />
+    <Content Include="recursos\img\Poesia_Libros\antologia-poetica-borges-300x476.jpg" />
+    <Content Include="recursos\img\Poesia_Libros\rimas-y-leyendas-gustavo-adolfo-bequer-300x457.jpg" />
+    <Content Include="recursos\img\Poesia_Libros\ruben-dario-poesias-completas-300x300.jpg" />
+    <Content Include="recursos\img\popup-photo.jpg" />
+    <Content Include="recursos\img\portada_libros\animes.jpg" />
+    <Content Include="recursos\img\portada_libros\hacia-un-mundo-nuevo.jpg" />
+    <Content Include="recursos\img\portada_libros\Hatsune.jpg" />
+    <Content Include="recursos\img\portada_libros\la-torre-tesla.jpg" />
+    <Content Include="recursos\img\portada_libros\name.jpg" />
+    <Content Include="recursos\img\portada_libros\odisea.jpg" />
+    <Content Include="recursos\img\portada_libros\SAO.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-1.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-10.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-2.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-3.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-4.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-5.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-6.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-7.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-8.jpg" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\ms-p-9.jpg" />
+    <Content Include="recursos\img\service-bg.jpg" />
+    <Content Include="recursos\img\team\people\people-1.jpg" />
+    <Content Include="recursos\img\team\people\people-2.jpg" />
+    <Content Include="recursos\img\team\people\people-3.jpg" />
+    <Content Include="recursos\img\team\people\people-4.jpg" />
+    <Content Include="recursos\img\team\people\people-5.jpg" />
+    <Content Include="recursos\img\testimonials\testi-1.jpg" />
+    <Content Include="recursos\img\testimonials\testi-2.jpg" />
+    <Content Include="recursos\img\testimonials\testi-3.jpg" />
+    <Content Include="recursos\img\world-map.png" />
+    <Content Include="recursos\js\bootstrap.min.js" />
+    <Content Include="recursos\js\circle-active.js" />
+    <Content Include="recursos\js\contact.js" />
+    <Content Include="recursos\js\custom.js" />
+    <Content Include="recursos\js\gmaps.min.js" />
+    <Content Include="recursos\js\jquery-1.10.2.js" />
+    <Content Include="recursos\js\jquery-3.2.1.min.js" />
+    <Content Include="recursos\js\jquery.form.js" />
+    <Content Include="recursos\js\jquery.validate.min.js" />
+    <Content Include="recursos\js\owl.carousel.js" />
+    <Content Include="recursos\js\popper.min.js" />
+    <Content Include="recursos\js\smoothscroll.js" />
+    <Content Include="recursos\js\theme.js" />
+    <Content Include="recursos\vendors\circle-bar\circle-progress.min.js" />
+    <Content Include="recursos\vendors\circle-bar\plugins.js" />
+    <Content Include="recursos\vendors\counterup\apear.js" />
+    <Content Include="recursos\vendors\counterup\countto.js" />
+    <Content Include="recursos\vendors\counterup\jquery.counterup.min.js" />
+    <Content Include="recursos\vendors\counterup\jquery.waypoints.min.js" />
+    <Content Include="recursos\vendors\isotope\imagesloaded.pkgd.min.js" />
+    <Content Include="recursos\vendors\isotope\isotope.pkgd.min.js" />
+    <Content Include="recursos\vendors\magnify-popup\jquery.magnific-popup.min.js" />
+    <Content Include="recursos\vendors\magnify-popup\magnific-popup.css" />
+    <Content Include="recursos\vendors\owl-carousel\owl.carousel.min.css" />
+    <Content Include="recursos\vendors\owl-carousel\owl.carousel.min.js" />
+    <Content Include="recursos\vendors\progress\circle-progress.js" />
+    <Content Include="recursos\vendors\progress\circularprogress.css" />
+    <Content Include="recursos\vendors\progress\circularprogress.jquery.min.js" />
+    <Content Include="recursos\vendors\revolution\assets\coloredbg.png" />
+    <Content Include="recursos\vendors\revolution\assets\gridtile.png" />
+    <Content Include="recursos\vendors\revolution\assets\gridtile_3x3.png" />
+    <Content Include="recursos\vendors\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="recursos\vendors\revolution\assets\gridtile_white.png" />
+    <Content Include="recursos\vendors\revolution\assets\loader.gif" />
+    <Content Include="recursos\vendors\revolution\assets\sources\fb.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\fr.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\ig.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\post.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\revolution_slide1.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\revolution_slide2.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\tw.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\vm.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\wc.png" />
+    <Content Include="recursos\vendors\revolution\assets\sources\yt.png" />
+    <Content Include="recursos\vendors\revolution\assets\svg\index.php" />
+    <Content Include="recursos\vendors\revolution\css\closedhand.cur" />
+    <Content Include="recursos\vendors\revolution\css\index.php" />
+    <Content Include="recursos\vendors\revolution\css\layers.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\ares.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\custom.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\dione.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\erinyen.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\gyges.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\hades.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\hebe.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\hephaistos.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\hermes.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\hesperiden.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\metis.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\persephone.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\uranus.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation-skins\zeus.css" />
+    <Content Include="recursos\vendors\revolution\css\navigation.css" />
+    <Content Include="recursos\vendors\revolution\css\openhand.cur" />
+    <Content Include="recursos\vendors\revolution\css\settings-ver.5.3.1.css" />
+    <Content Include="recursos\vendors\revolution\css\settings.css" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\index.php" />
+    <Content Include="recursos\vendors\revolution\fonts\index.php" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\css\helper.css" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\css\index.php" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\fonts\index.php" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\index.php" />
+    <Content Include="recursos\vendors\revolution\fonts\revicons\index.php" />
+    <Content Include="recursos\vendors\revolution\fonts\revicons\revicons.svg" />
+    <Content Include="recursos\vendors\revolution\index.php" />
+    <Content Include="recursos\vendors\revolution\js\extensions\index.php" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\index.php" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.actions.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.carousel.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.kenburn.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.layeranimation.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.migration.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.navigation.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.parallax.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.slideanims.js" />
+    <Content Include="recursos\vendors\revolution\js\extensions\source\revolution.extension.video.js" />
+    <Content Include="recursos\vendors\revolution\js\index.php" />
+    <Content Include="recursos\vendors\revolution\js\jquery.themepunch.enablelog.js" />
+    <Content Include="recursos\vendors\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="recursos\vendors\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="recursos\vendors\revolution\js\source\index.php" />
+    <Content Include="recursos\vendors\revolution\js\source\jquery.themepunch.enablelog.js" />
+    <Content Include="recursos\vendors\revolution\js\source\jquery.themepunch.revolution.js" />
+    <Content Include="recursos\vendors\revolution\js\source\jquery.themepunch.tools.min.js" />
+    <Content Include="recursos\vendors\revolution\php\facebook\class-facebook.php" />
+    <Content Include="recursos\vendors\revolution\php\flickr\class-flickr.php" />
+    <Content Include="recursos\vendors\revolution\php\instagram\class-instagram.php" />
+    <Content Include="recursos\vendors\revolution\php\twitter\class-twitter.php" />
+    <Content Include="recursos\vendors\revolution\php\twitter\connection\Application.php" />
+    <Content Include="recursos\vendors\revolution\php\twitter\connection\ConnectionAbstract.php" />
+    <Content Include="recursos\vendors\revolution\php\twitter\connection\User.php" />
+    <Content Include="recursos\vendors\revolution\php\twitter\RestApi.php" />
+    <Content Include="recursos\vendors\revolution\php\vimeo\class-vimeo.php" />
+    <Content Include="recursos\vendors\revolution\php\youtube\class-youtube.php" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\abcclasificacion.aspx.cs">
+      <DependentUpon>abcclasificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\abcclasificacion.aspx.designer.cs">
+      <DependentUpon>abcclasificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\abcestatus.aspx.cs">
+      <DependentUpon>abcestatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\abcestatus.aspx.designer.cs">
+      <DependentUpon>abcestatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\abcGenero.aspx.cs">
+      <DependentUpon>abcGenero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\abcGenero.aspx.designer.cs">
+      <DependentUpon>abcGenero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\abccesatado y pais.aspx.cs">
+      <DependentUpon>abccesatado y pais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\abccesatado y pais.aspx.designer.cs">
+      <DependentUpon>abccesatado y pais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\abctipousuario.aspx.cs">
+      <DependentUpon>abctipousuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\abctipousuario.aspx.designer.cs">
+      <DependentUpon>abctipousuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Aventura.aspx.cs">
+      <DependentUpon>Aventura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Aventura.aspx.designer.cs">
+      <DependentUpon>Aventura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Chick-Lit.aspx.cs">
+      <DependentUpon>Chick-Lit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Chick-Lit.aspx.designer.cs">
+      <DependentUpon>Chick-Lit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Ciencia_Ficcion.aspx.cs">
+      <DependentUpon>Ciencia_Ficcion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Ciencia_Ficcion.aspx.designer.cs">
+      <DependentUpon>Ciencia_Ficcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Espiritual.aspx.cs">
+      <DependentUpon>Espiritual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Espiritual.aspx.designer.cs">
+      <DependentUpon>Espiritual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Fanfic.aspx.cs">
+      <DependentUpon>Fanfic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Fanfic.aspx.designer.cs">
+      <DependentUpon>Fanfic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FanFic_estesi.aspx.cs">
+      <DependentUpon>FanFic_estesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\FanFic_estesi.aspx.designer.cs">
+      <DependentUpon>FanFic_estesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Fantasia.aspx.cs">
+      <DependentUpon>Fantasia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Fantasia.aspx.designer.cs">
+      <DependentUpon>Fantasia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\historias.aspx.cs">
+      <DependentUpon>historias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\historias.aspx.designer.cs">
+      <DependentUpon>historias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Humor.aspx.cs">
+      <DependentUpon>Humor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Humor.aspx.designer.cs">
+      <DependentUpon>Humor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Misterio.aspx.cs">
+      <DependentUpon>Misterio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Misterio.aspx.designer.cs">
+      <DependentUpon>Misterio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Novela_Historica.aspx.cs">
+      <DependentUpon>Novela_Historica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Novela_Historica.aspx.designer.cs">
+      <DependentUpon>Novela_Historica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Novela_Juvenil.aspx.cs">
+      <DependentUpon>Novela_Juvenil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Novela_Juvenil.aspx.designer.cs">
+      <DependentUpon>Novela_Juvenil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\pais.aspx.cs">
+      <DependentUpon>pais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\pais.aspx.designer.cs">
+      <DependentUpon>pais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Paranormal.aspx.cs">
+      <DependentUpon>Paranormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Paranormal.aspx.designer.cs">
+      <DependentUpon>Paranormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Poesia.aspx.cs">
+      <DependentUpon>Poesia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Poesia.aspx.designer.cs">
+      <DependentUpon>Poesia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Romance.aspx.cs">
+      <DependentUpon>Romance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Romance.aspx.designer.cs">
+      <DependentUpon>Romance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Site1.Master" />
+    <None Include="packages.config" />
+    <Content Include="recursos\css\.DS_Store" />
+    <Content Include="recursos\css\style.css.map" />
+    <Content Include="recursos\fonts\.DS_Store" />
+    <Content Include="recursos\fonts\fontawesome-webfont.eot" />
+    <Content Include="recursos\fonts\fontawesome-webfont.ttf" />
+    <Content Include="recursos\fonts\fontawesome-webfont.woff" />
+    <Content Include="recursos\fonts\fontawesome-webfont.woff2" />
+    <Content Include="recursos\fonts\FontAwesome.otf" />
+    <Content Include="recursos\img\.DS_Store" />
+    <Content Include="recursos\img\blog\.DS_Store" />
+    <Content Include="recursos\img\home-slider\.DS_Store" />
+    <Content Include="recursos\img\icon\.DS_Store" />
+    <Content Include="recursos\img\instagram\.DS_Store" />
+    <Content Include="recursos\img\instagram\right-instagram\.DS_Store" />
+    <Content Include="recursos\img\portfolio\ms-portfolio\.DS_Store" />
+    <Content Include="recursos\img\team\people\.DS_Store" />
+    <Content Include="recursos\img\testimonials\.DS_Store" />
+    <Content Include="recursos\js\.DS_Store" />
+    <Content Include="recursos\scss\.DS_Store" />
+    <Content Include="recursos\scss\style.scss" />
+    <Content Include="recursos\scss\_banner.scss" />
+    <Content Include="recursos\scss\_blog.scss" />
+    <Content Include="recursos\scss\_button.scss" />
+    <Content Include="recursos\scss\_chart.scss" />
+    <Content Include="recursos\scss\_contact.scss" />
+    <Content Include="recursos\scss\_feature.scss" />
+    <Content Include="recursos\scss\_footer.scss" />
+    <Content Include="recursos\scss\_header.scss" />
+    <Content Include="recursos\scss\_portfolio.scss" />
+    <Content Include="recursos\scss\_predefin.scss" />
+    <Content Include="recursos\scss\_slider.scss" />
+    <Content Include="recursos\scss\_variables.scss" />
+    <Content Include="recursos\vendors\.DS_Store" />
+    <Content Include="recursos\vendors\circle-bar\.DS_Store" />
+    <Content Include="recursos\vendors\counterup\.DS_Store" />
+    <Content Include="recursos\vendors\owl-carousel\.DS_Store" />
+    <Content Include="recursos\vendors\progress\.DS_Store" />
+    <Content Include="recursos\vendors\revolution\.DS_Store" />
+    <Content Include="recursos\vendors\revolution\assets\svg\svg.zip" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="recursos\vendors\revolution\fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="recursos\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="recursos\vendors\revolution\fonts\revicons\revicons.eot" />
+    <Content Include="recursos\vendors\revolution\fonts\revicons\revicons.ttf" />
+    <Content Include="recursos\vendors\revolution\fonts\revicons\revicons.woff" />
+    <Content Include="recursos\vendors\revolution\info.cfg" />
+    <Content Include="recursos\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="recursos\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="recursos\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="recursos\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49191</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49191/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
